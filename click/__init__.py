@@ -92,7 +92,9 @@ __all__ = [
 
 # Controls if click should emit the warning about the use of unicode
 # literals.
-disable_unicode_literals_warning = False
+# TODO(cooper): Move all users of `click` to Python 3
+disable_unicode_literals_warning = True
 
 
-__version__ = '7.0-dev'
+# Add a Local version identifier - PEP440 compliant - cooper
+__version__ = '7.0.dev+fb20180212'
